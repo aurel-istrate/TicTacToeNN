@@ -20,7 +20,7 @@ class Node:
         
         value = 0
         for i, j in self.nodes:
-            value += i.output_node() * j
+            value += i.output() * j
             
         if value > self.threshold:
             return 1
